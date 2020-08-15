@@ -38,7 +38,7 @@ def cityreader(cities=[]):
           line_count += 1
         else:
           #print(row[0])
-          cities.append(City(row[0], row[3], row[4]))
+          cities.append(City(row[0], float(row[3]), float(row[4])))
           #print(cities)
 
     return cities
